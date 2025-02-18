@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/flashcards');
+mongoose.connect( process.env.MONGODB_URI);
 
 // User Schema
 const userSchema = new mongoose.Schema({
